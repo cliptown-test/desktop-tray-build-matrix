@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "sourceOrganization": "cliptown",
+  "testOrganization": "cliptown-test",
+  "repository": "desktop-tray-build-matrix",
+  "profile": "desktop-tray-build-matrix",
+  "platforms": ["linux", "macos", "windows"],
+  "requiredChecks": [
+    "lifecycle-controller-unit-tests",
+    "linux-debug-build",
+    "macos-debug-build",
+    "windows-debug-build"
+  ],
+  "security": {
+    "immutableSourcePins": true,
+    "pullRequestCredentials": false,
+    "leastPrivilege": true,
+    "capturesClipboardData": false
+  }
+}
